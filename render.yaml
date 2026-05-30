@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: aerocast-weather
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/weather?city=London
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false   # Set this in the Render dashboard — optional, enables AI insights
+      - key: OPENWEATHER_API_KEY
+        sync: false   # Set this in the Render dashboard — optional, not currently used

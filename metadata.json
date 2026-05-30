@@ -1,0 +1,6 @@
+{
+  "name": "Weather Dashboard",
+  "description": "A responsive weather dashboard with real-time searches, multi-city tracking, wind/humidity telemetry, and stunning dynamic animated weather backgrounds.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
